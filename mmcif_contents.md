@@ -1,3 +1,30 @@
+### mmCIF (Macromolecular Crystallographic Information File)
+
+The mmCIF (Macromolecular Crystallographic Information File) format is a standard used in structural biology to store information about the three-dimensional structures of large biological molecules like proteins and nucleic acids. mmCIF files are a specific implementation of the more general CIF (Crystallographic Information File) format and are designed to capture a broad range of details about the molecule, its geometry, and the methods used to determine its structure. Below are some types of information you might find in an mmCIF file:
+
+**Structural Information**
+1. Atomic Coordinates: The core data in an mmCIF file is the 3D coordinates of each atom in the molecule. This includes the x, y, and z coordinates, usually in angstroms.
+2. Unit Cell Parameters: In the case of crystallographic structures, information about the unit cell of the crystal may be included.
+3. Connectivity: Information about which atoms are bonded to which, as well as more complex connectivity issues like disulfide bridges.
+4. B-factors: These are temperature factors that give an indication of the mobility of atoms in the structure.
+5. Occupancy: In crystal structures, the same position in the unit cell might be occupied by different atoms at different times. The occupancy factor gives the fraction of time a particular atom occupies a given position.
+
+**Metadata**
+1. Experimental Data: Details about how the structure was determined, such as the type of experiment (e.g., X-ray crystallography, NMR spectroscopy), the resolution, etc.
+2. Annotations: Information about the biological context of the molecule, its function, the species it comes from, etc.
+3. Authors and Citations: Information about the scientists who determined the structure and where the data was published.
+4. Software: The computational tools used to refine the structure may also be mentioned.
+
+**Sequence Information**
+1. Primary Sequence: The amino acid or nucleotide sequence of the macromolecule.
+2. Secondary Structure: Elements like alpha-helices and beta-sheets may be annotated.
+
+**Validation**
+1. Quality Metrics: Various statistics and metrics that provide insights into the quality of the structure, such as R-factors for crystal structures.
+
+In summary, mmCIF files can contain a wealth of information that ranges from the raw coordinates of atoms to various types of metadata that provide context and validation for the structural data. These files are commonly used for storing structures in databases like the Protein Data Bank (PDB), and they can be read and manipulated using various bioinformatics tools, some of which you could use via Python and libraries like Biopython.
+
+
 | Table Name                       | Group          | Explanation                                               |
 | -------------------------------- | -------------- | --------------------------------------------------------- |
 | `_entry`                         | General        | Basic information about the entry itself.                 |
